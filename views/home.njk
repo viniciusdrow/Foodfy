@@ -1,0 +1,78 @@
+
+{% extends "layout.njk" %}
+
+
+{% block content %}
+
+<div class="box-image">
+
+    <div class="box-text">
+        <h1>As melhores receitas</h1>
+        <p>Aprenda a construir os melhores pratos</p>
+        <p>com receitas criadas por profissionais</p>
+        <p>do mundo inteiro.</p>
+    </div>
+
+    <div>
+        <img src="/img/chef.png" alt="chef">
+    </div>
+</div>
+
+<div id="wrapper">
+    <h1>Mais acessadas</h1>
+</div>
+
+<section class="cards">
+
+    <div class="card" id="burger.png">
+        <img src="/img/burger.png" alt="burger">
+        <h2>Triplo bacon burguer</h2>
+        <p>por Jorge Relato</p>
+    </div>
+
+    <div class="card" id="pizza.png">
+        <img src="img/pizza.png" alt="pizza">
+        <h2>Pizza 4 estações</h2>
+        <p>por Fabiana Melo</p>
+    </div>
+
+    <div class="card" id="espaguete.png">
+        <img src="img/espaguete.png" alt="espaguete">
+        <h2>Espaguete ao alho</h2>
+        <p>por Júlia Kinoto</p>
+    </div>
+
+    <div class="card" id="lasanha.png">
+        <img src="img/lasanha.png" alt="lasanha">
+        <h2>Lasanha mac n' cheese</h2>
+        <p>por Juliano Viera</p>
+    </div>
+
+    <div class="card" id="doce.png">
+        <img src="img/doce.png" alt="doces">
+        <h2>Docinhos do céu</h2>
+        <p>por Ricardo Golvea</p>
+    </div>
+
+    <div class="card" id="asinhas.png">
+        <img src="img/asinhas.png" alt="asinhas">
+        <h2>Asinhas de frango ao barbecue</h2>
+        <p>por Vania Steroski</p>
+    </div>
+
+</section>
+
+<div class="modal-overlay">
+    <div class="modal">
+        <a class="close-modal">Fechar modal</a>
+
+        <div class="modal-content">
+            <img src="" alt="">
+            <h2></h2>
+            <p></p>
+        </div>
+    </div>
+</div> 
+
+ <script src="scripts.js"></script>
+{% endblock %}
