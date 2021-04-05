@@ -65,7 +65,7 @@ server.get("/receitas/:id", function (req, res) {
     const receitas = recipes_list[id]; // Array de receitas carregadas do data.js
   
 
-return res.render('recipes', { receitas});
+return res.render('receitas', { receitas});
 
 })
 
