@@ -17,7 +17,7 @@ server.get("/", function(req, res) {
     return res.render("home")
 })
  
-
+/*
 server.get("/receitas", function(req, res) {
     const id = req.params.id
 
@@ -31,7 +31,7 @@ server.get("/receitas", function(req, res) {
     return res.render("receitas", { items: receitas })
    
 })
-
+*/
 server.get("/recipes", function(req, res) {
     return res.render("recipes", { items: recipes_list})
 
@@ -55,7 +55,19 @@ server.listen(5003, function() {
 })
 
 
+server.get("/receitas", function(req, res) {
+    return res.render("receitas", { items: recipes_list})
 
+})
+
+server.get("/receitas/:id", function (req, res) {
+    const id = req.params.id;
+    const receitas = recipes_list[id]; // Array de receitas carregadas do data.js
+  
+
+return res.render('recipes', { receitas});
+
+})
 
 
 
